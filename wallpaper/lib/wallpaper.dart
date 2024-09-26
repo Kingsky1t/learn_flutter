@@ -26,7 +26,7 @@ class _WallpaperState extends State<Wallpaper> {
         Uri.parse('https://api.pexels.com/v1/curated?per_page=80&page=$page'),
         headers: {
           'Authorization':
-              'B3ZRkGmtTeThNffKA7Z4VFubtyOvAQ4eQELLidZ2AIVyPy7kfyOCwPQB'
+              '<API_KEY>'
         }).then((value) {
       Map result = jsonDecode(value.body);
       setState(() {
